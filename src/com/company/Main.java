@@ -14,14 +14,14 @@ public class Main {
 
     }
 
-    public static void addition(Box<? extends Double, Integer> box1, Box<? extends Float, Float> box2) {
+    public static void addition(Box<? extends Double, ? extends Integer> box1, Box<? extends Float, Float> box2) {
 
         Number ad = box1.getNumber1() + box1.getNumber2() + box2.getNumber2() + box2.getNumber1();
         System.out.println(ad);
 
     }
 
-    public static void multiplication(Box<? extends Double, Integer> box1, Box<? extends Float, Float> box2) {
+    public static void multiplication(Box<? extends Double,? extends Integer> box1, Box<? extends Float, Float> box2) {
         Number mu = box1.getNumber1() * box1.getNumber2() * box2.getNumber2() * box2.getNumber1();
         System.out.println(mu);
 

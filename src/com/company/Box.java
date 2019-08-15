@@ -1,6 +1,6 @@
 package com.company;
 
-public class Box<T, V extends Number> {
+public class Box<T extends Number, V extends Number> {
     private T number1;
     private V number2;
 
